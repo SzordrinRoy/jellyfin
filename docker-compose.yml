@@ -9,7 +9,7 @@ services:
       - PGID=1000
       - TZ=America/Chicago
     volumes:
-      - ${CONFIG_PATH}/jellyfin:/config
+      - ${CONFIG_PATH}/${CONTAINER_NAME}:/config
       - ${MEDIA_PATH}/tv:/data/tvshows:ro
       - ${MEDIA_PATH}/movies:/data/movies:ro
       - ${MEDIA_PATH}/music:/data/music:ro
