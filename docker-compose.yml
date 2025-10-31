@@ -9,6 +9,7 @@ services:
       - PGID=1000
       - TZ=America/Chicago
     volumes:
+      - ${TRANSCODE_PATH}:/transcode
       - ${CONFIG_PATH}/${CONTAINER_NAME}:/config
       - ${MEDIA_PATH}/tv:/data/tvshows:ro
       - ${MEDIA_PATH}/movies:/data/movies:ro
