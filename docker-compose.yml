@@ -1,6 +1,6 @@
 services:
   jellyfin:
-    image: lscr.io/linuxserver/jellyfin:latest
+    image: jellyfin/jellyfin:latest
     container_name: ${CONTAINER_NAME}
     network_mode: bridge
     cpu_shares: 2048
@@ -17,5 +17,5 @@ services:
     devices: 
       - /dev/dri:/dev/dri
     ports:
-      - 8096:8096
+      - ${PORT}:8096
     restart: unless-stopped
