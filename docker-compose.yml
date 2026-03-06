@@ -10,7 +10,6 @@ services:
       - TZ=America/Chicago
     volumes:
       - ${TRANSCODE_PATH}:/transcode
-      - ${CACHE_PATH}/${CONTAINER_NAME}:/cache
       - ${CONFIG_PATH}/${CONTAINER_NAME}:/config
       - ${MEDIA_PATH}/tv:/data/tvshows:ro
       - ${MEDIA_PATH}/movies:/data/movies:ro
