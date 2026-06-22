@@ -12,7 +12,6 @@ services:
       - ${TRANSCODE_PATH}:/transcode
       - ${CONFIG_PATH}/${CONTAINER_NAME}/config:/config
       - ${CONFIG_PATH}/${CONTAINER_NAME}/cache:/cache
-      - ${CONFIG_PATH}/${CONTAINER_NAME}/cache/images:/cache/images
       - ${MEDIA_PATH}/tv:/data/tvshows:ro
       - ${MEDIA_PATH}/movies:/data/movies:ro
       - ${MEDIA_PATH}/music:/data/music:ro
